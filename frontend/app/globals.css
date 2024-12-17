@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Wave Animation Styles */
+.wave-animation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wave {
+  width: 10px;
+  height: 30px;
+  margin: 0 5px;
+  background: #4f46e5; /* Indigo-600 */
+  border-radius: 5px;
+  animation: wave 1s infinite;
+}
+
+.ai-wave {
+  animation-delay: 0s;
+}
+
+.user-wave {
+  animation-delay: 0.2s;
+}
+
+@keyframes wave {
+  0% {
+    transform: scaleY(1);
+  }
+  50% {
+    transform: scaleY(1.5);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
+
+/* Blur Transition */
+.custom-blur-sm {
+  filter: blur(5px);
+}
+
+/* Overlay Styling */
+.custom-absolute {
+  position: absolute;
+  z-index: 30; /* Ensure the overlay is above other elements */
+}
+
+.custom-inset-0 {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.custom-pointer-events-none {
+  pointer-events: none;
+}

@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+sqlalchemy
+python-dotenv
+langchain-openai
+requests
+passlib[bcrypt]
+python-jose
+python-dotenv
