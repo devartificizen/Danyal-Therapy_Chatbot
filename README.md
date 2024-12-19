@@ -56,6 +56,8 @@ Create a `.env` file:
 
 ```bash
 touch .env
+GOOGLE_API_KEY=
+AZURE_API_KEY=    
 ```
 
 ## Running the Chatbot Locally
